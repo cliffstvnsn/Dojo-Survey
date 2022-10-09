@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey</title>
+</head>
+
+<body>
+    <main>
+        <nav>
+            <form action="/process" method="POST">
+                <h1>Dojo Survey</h1>
+                <p>Name:</p>
+                <input name="Name" type="text" class="text">
+                <p>Dojo Location:</p>
+                <label for="locations"></label>
+                <select name="locations" id="locations">
+                    <option value="Richmmond">Richmond</option>
+                    <option value="Washington D.C.">Washington D. C.</option>
+                    <option value="Baltimore">Baltimore</option>
+                    <option value="New York City">New York City</option>
+                    <option value="Seattle">Seattle</option>
+                    <option value="Nashville">Nashville</option>
+                </select>
+                <p>Favorite Language:</p>
+                <label for="Languages"></label>
+                <select name="Languages" id="Languages">
+                    <option value="Python">Python</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="C#">C#</option>
+                    <option value="Java">Java</option>
+                </select>
+                <p>Comments:</p>
+                <textarea name="Comments" id="Comments" cols="30" rows="10"></textarea>
+                <button type="submit" class="Submit">Submit</button>
+            </form>
+        </nav>
+    </main>
+</body>
+
+</html>
